@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="wcuascotaExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label x:Name="lblEstudiante" FontSize="12" TextColor="#004185" HorizontalTextAlignment="Center"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Nombre" FontSize="20" FontAttributes="Bold" TextColor="#0048BD" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="0"/>
+                <Entry x:Name="txtNombre" FontSize="15" Placeholder="Nombre" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0" Keyboard="Text"/>
+                <Label Text="Monto Inicial" FontSize="20" FontAttributes="Bold" TextColor="#0048BD" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="1"/>
+                <Entry x:Name="txtMonto" FontSize="15" Placeholder="Monto" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="1" Unfocused="txtMonto_Unfocused"/>
+                <Label Text="Pago Mensual" FontSize="20" FontAttributes="Bold" TextColor="#0048BD" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="2"/>
+                <Label x:Name="lblPago" FontSize="15" FontAttributes="Bold" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="2"/>
+                <Button x:Name="btCalcular" Text="Calcular Pago Mensual" Clicked="btCalcular_Clicked" BackgroundColor="#0048BD" TextColor="White" Grid.Column="0" Grid.Row="3"/>
+            </Grid>
+            <Button x:Name="btGuardar" Text="Guardar" Clicked="btGuardar_Clicked" BackgroundColor="#0048BD" TextColor="White"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

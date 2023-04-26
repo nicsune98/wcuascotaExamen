@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="wcuascotaExamen.Login">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Image Source="Logo.png" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Usuario" FontSize="20" FontAttributes="Bold" TextColor="#0048BD" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="0"/>
+                <Entry x:Name="txtUsuario" FontSize="15" Placeholder="Usuario" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>
+                <Label Text="Contraseña" FontSize="20" FontAttributes="Bold" TextColor="#0048BD" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="1"/>
+                <Entry x:Name="txtContraseña" FontSize="15" Placeholder="Contraseña" IsPassword="True" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="1"/>
+            </Grid>
+            <Button x:Name="btIngreso" Text="Ingresar" Clicked="btIngreso_Clicked" BackgroundColor="#0048BD" TextColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

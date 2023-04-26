@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="wcuascotaExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label x:Name="lblEstudiante" FontSize="12" TextColor="#004185" HorizontalTextAlignment="Center"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Usuario" FontSize="20" FontAttributes="Bold" TextColor="#0048BD" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="0"/>
+                <Label Text="Nombre" FontSize="20" FontAttributes="Bold" TextColor="#0048BD" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="1"/>
+                <Label x:Name="lblNombre" FontSize="15" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="1"/>
+                <Label Text="Pago Total" FontSize="20" FontAttributes="Bold" TextColor="#0048BD" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="2"/>
+                <Label x:Name="lblPago" FontSize="15" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="2"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
