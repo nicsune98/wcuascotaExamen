@@ -17,7 +17,7 @@ namespace wcuascotaExamen
             InitializeComponent();
             lblEstudiante.Text =estudiante;
             lblNombre.Text = nombre;
-            lblPago.Text = Convert.ToString(pago+monto);
+            lblPago.Text = Convert.ToString(monto+(pago*3));
 
         }
     }

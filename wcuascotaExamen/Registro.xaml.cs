@@ -31,7 +31,7 @@ namespace wcuascotaExamen
                 double montoInicial = Convert.ToDouble(txtMonto.Text);
                 double pagoMensual = (ValorCurso - montoInicial) / 3;
                 double porcentaje = ValorCurso * 0.5;
-                double pagoCalculado = (pagoMensual + porcentaje) * 3;
+                double pagoCalculado = Math.Truncate(((pagoMensual + porcentaje))*100)/100;
                 lblPago.Text = pagoCalculado.ToString();
             }
             else
